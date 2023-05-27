@@ -176,9 +176,7 @@ Scope: to prepare storage infrastructure on two Linux servers and implement a ba
     ```
 
 
-26. Restart Apache
-
-    `sudo systemctl restart httpd`
+26. Restart Apache with `sudo systemctl restart httpd`
 
 
 ## SET UP A DATABASE SERVER
@@ -248,7 +246,7 @@ Scope: to prepare storage infrastructure on two Linux servers and implement a ba
 4. Enable TCP port 80 in Inbound Rules configuration for your Web Server EC2 (enable from everywhere 0.0.0.0/0 or from your workstation’s IP)
 
 
-5. Run `curl ifconfig.me` to find your Web server's public IP address and copy it
+5. Run `curl ifconfig.me` to find out your Web server's public IP address and copy it
 
 
 6. Try to access from your browser the link to your WordPress `http://<Web-Server-Public-IP-Address>/wordpress/`
