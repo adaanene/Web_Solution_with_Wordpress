@@ -5,7 +5,7 @@ Scope: to prepare storage infrastructure on two Linux servers and implement a ba
 
 ## SET UP A WEB SERVER
 
-1. Create an EC2 instance with RedHat Server in AWS and name is "Web Server"
+1. Create an EC2 instance with RedHat Server in AWS and name it "Web Server"
 
 
 2. Follow the steps in this [video](https://www.youtube.com/watch?v=HPXnXkBzIHw) to add 3 EBS volumes of 10GB to your Web Server. 
@@ -15,9 +15,8 @@ Scope: to prepare storage infrastructure on two Linux servers and implement a ba
     ![lsblk](./pictures/run_lsbk.png)
 
 
-3. Create a single partition on each of your three block devices using `gdisk` command
+3. Create a single partition on each of your three block devices using `gdisk` command, then check that the partition has been created with `lsblk`
 
-   For example to create a single partition on disk xvdg use `sudo gdisk /dev/xvdg` like in the image below then check that the partitions have been created with `lsblk`
    
    ![create partition](./pictures/create_partition.png)
 
